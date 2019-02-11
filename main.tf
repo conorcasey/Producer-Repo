@@ -13,7 +13,7 @@ resource "tfe_team" "ops" {
   organization = "${var.org}"
 }
 
-resource "tfe_team_member" "ccasey" {
+resource "tfe_team_member" "cmcasey" {
   team_id  = "${tfe_team.developers.id}"
   username = "ccasey"
 }
