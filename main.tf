@@ -13,12 +13,12 @@ resource "tfe_team" "ops" {
   organization = "${var.org}"
 }
 
-resource "tfe_team_member" "azc-dev" {
+resource "tfe_team_member" "ccasey" {
   team_id  = "${tfe_team.developers.id}"
   username = "azc-dev"
 }
 
-resource "tfe_team_member" "azc-ops" {
+resource "tfe_team_member" "gcoyne" {
   team_id  = "${tfe_team.ops.id}"
   username = "azc-ops"
 }
